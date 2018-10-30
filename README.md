@@ -1,5 +1,22 @@
 # AngularFlex
 
+For server please use https://github.com/VladyslavKovalov/PaymentSystemServer
+to change server url plese change serverUrl in GetValuesService
+
+
+
+
+Playground project 
+First time using flexbox 
+
+need to do:
+
+1) auth (identity Server)
+2) change styles to scss and clean them
+3) add ngrx
+4) error handling
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
 ## Development server
