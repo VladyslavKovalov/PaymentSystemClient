@@ -1,0 +1,29 @@
+<div class="main">
+  <div class="header">
+    <div class="logo">
+      <img src="img/dog.png">
+    </div>
+    <nav mat-tab-nav-bar [backgroundColor]="background">
+      <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"> {{link}}
+      </a>
+      <a mat-tab-link disabled>Disabled Link</a>
+    </nav>
+  </div>
+  <div class="sellerlist">
+    <div class="label pointer" (click)="addSeler()">
+      <svg class="addicon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+        <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z" /></svg>
+      <h2 class="mat-h2">Press to add new seller!</h2>
+    </div>
+    <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="large" color="#fff" type="ball-spin-clockwise"></ngx-spinner>
+    <div *ngFor="let seller of sellers">
+      <app-seller-label (addTerminal)="addTerminal($event)" (updateSeller)="updateSeller($event)" (deleteSeller)="deleteSeller($event)"
+        (deleteSeller)="deleteSeller($event)" [seller]="seller"></app-seller-label>
+
+      <div *ngFor="let terminal of seller.Terminals">
+        <app-terminal-label (deleteTerminal)="deleteTerminal($event)" (updateTerminal)="updateTerminal($event)"
+          (onComplete)="testFunc($event)" [terminal]="terminal" [seller]="seller"></app-terminal-label>
+      </div>
+    </div>
+  </div>
+</div>
