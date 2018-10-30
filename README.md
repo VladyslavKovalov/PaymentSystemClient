@@ -3,7 +3,7 @@
 For server please use https://github.com/VladyslavKovalov/PaymentSystemServer
 to change server url plese change serverUrl in GetValuesService
 
-
+<a href="http://tinypic.com?ref=2ym845e" target="_blank"><img src="http://i65.tinypic.com/2ym845e.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
 
 
 Playground project 
