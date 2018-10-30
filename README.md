@@ -1,7 +1,8 @@
 # AngularFlex
 
 For server please use https://github.com/VladyslavKovalov/PaymentSystemServer
-to change server url plese change serverUrl in GetValuesService
+
+to change server url please change serverUrl in GetValuesService
 
 <a href="http://tinypic.com?ref=abkxhg" target="_blank"><img src="http://i64.tinypic.com/abkxhg.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
 
